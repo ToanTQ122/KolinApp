@@ -25,8 +25,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val anim = ValueAnimator.ofFloat(1f, 1.3f)
-        val imageView: View = binding.imageSplashs
-        anim.duration = 1000
+        val imageView: View = binding.imageSplash
+        anim.duration = 400
         anim.addUpdateListener { animation ->
             imageView.scaleX = animation.animatedValue as Float
             imageView.scaleY = animation.animatedValue as Float

@@ -7,9 +7,14 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_course"
+        android:id="@+id/navigation_favorite"
         android:icon="@drawable/ic_course"
-        android:title="@string/title_course" />
+        android:title="@string/title_favorite" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/title_history" />
 
     <item
         android:id="@+id/navigation_setting"
