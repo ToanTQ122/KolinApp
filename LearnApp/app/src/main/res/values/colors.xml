@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- primary -->
+    <color name="primary_50">#FFFFE8D9</color>
+    <color name="primary_100">#FFFFD0B5</color>
+    <color name="primary_200">#FFFFB088</color>
+    <color name="primary_300">#FFFF9466</color>
+    <color name="primary_400">#FFF9703E</color>
+    <color name="primary_500">#FFF35627</color>
+    <color name="primary_600">#FFDE3A11</color>
+    <color name="primary_700">#FFC52707</color>
+    <color name="primary_800">#FFAD1D07</color>
+    <color name="primary_900">#FF841003</color>
+    <!-- neutrals -->
+    <color name="neutrals_50">#FFF5F7FA</color>
+    <color name="neutrals_100">#FFE4E7EB</color>
+    <color name="neutrals_200">#FFCBD2D9</color>
+    <color name="neutrals_300">#FF9AA5B1</color>
+    <color name="neutrals_400">#FF7B8794</color>
+    <color name="neutrals_500">#FF616E7C</color>
+    <color name="neutrals_600">#FF52606D</color>
+    <color name="neutrals_700">#FF3E4C59</color>
+    <color name="neutrals_800">#FF323F4B</color>
+    <color name="neutrals_900">#FF1F2933</color>
+    <!-- blue -->
+    <color name="blue_100">#FF82B1FF</color>
+    <color name="blue_200">#FF64ABFF</color>
+    <color name="blue_300">#FF2F80ED</color>
+    <color name="blue_400">#FF2979FF</color>
+    <color name="blue_700">#FF2962FF</color>
+    <color name="blue_800">#FF0A6CDF</color>
+    <color name="blue_900">#FF104583</color>
+
+    <!-- green -->
+    <color name="green_50">#FFE3F9E5</color>
+    <color name="green_100">#FFC1EAC5</color>
+    <color name="green_200">#FFA3D9A5</color>
+    <color name="green_300">#FF7BC47F</color>
+    <color name="green_400">#FF57AE5B</color>
+    <color name="green_500">#FF3F9142</color>
+    <color name="green_600">#FF2F8132</color>
+    <color name="green_700">#FF207227</color>
+    <color name="green_800">#FF0E5814</color>
+    <color name="green_900">#FF05400A</color>
+    <!-- red -->
+    <color name="red_50">#FFFFEEEE</color>
+    <color name="red_100">#FFFACDCD</color>
+    <color name="red_200">#FFF29B9B</color>
+    <color name="red_300">#FFE66A6A</color>
+    <color name="red_400">#FFD64545</color>
+    <color name="red_500">#FFBA2525</color>
+    <color name="red_600">#FFA61B1B</color>
+    <color name="red_700">#FF911111</color>
+    <color name="red_800">#FF780A0A</color>
+    <color name="red_900">#FF610404</color>
+
+    <!-- yellow -->
+    <color name="yellow_50">#FFFFFAEB</color>
+    <color name="yellow_100">#FFFCEFC7</color>
+    <color name="yellow_200">#FFF8E3A3</color>
+    <color name="yellow_300">#FFF9DA8B</color>
+    <color name="yellow_400">#FFF7D070</color>
+    <color name="yellow_500">#FFE9B949</color>
+    <color name="yellow_600">#FFC99A2E</color>
+    <color name="yellow_700">#FFA27C1A</color>
+    <color name="yellow_800">#FF7C5E10</color>
+    <color name="yellow_900">#FF513C06</color>
+    <!-- supporting -->
+    <color name="supporting_50">#FFE0E8F9</color>
+    <color name="supporting_100">#FFBED0F7</color>
+    <color name="supporting_200">#FF98AEEB</color>
+    <color name="supporting_300">#FF7B93DB</color>
+    <color name="supporting_400">#FF647ACB</color>
+    <color name="supporting_500">#FF4C63B6</color>
+    <color name="supporting_600">#FF4055A8</color>
+    <color name="supporting_700">#FF35469C</color>
+    <color name="supporting_800">#FF2D3A8C</color>
+    <color name="supporting_900">#FF19216C</color>
+
+    <color name="colorGrayThunder">#241F20</color>
+    <color name="colorGrayMineShaft">#252525</color>
+    <color name="colorGrayMineShaftLight">#3B3B3B</color>
+    <color name="colorGrayDusty">#9A9A9A</color>
+    <color name="colorGrayAlto">#CFCFCF</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreenJungle">#30BE71</color>
+    <color name="colorPurpleMauve">#FD99FF</color>
+</resources>
