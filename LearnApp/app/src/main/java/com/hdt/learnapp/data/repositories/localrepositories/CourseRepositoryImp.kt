@@ -6,19 +6,42 @@ import javax.inject.Inject
 
 class CourseRepositoryImp @Inject constructor(private val courseDao: CourseDao) : CourseRepository {
 
-    override suspend fun getCourses(): List<Course> {
-        return courseDao.getCourses()
+    override suspend fun getAll(): List<Course> {
+        return courseDao.getAll()
     }
 
-    override suspend fun insertCourse(course: Course) {
-        courseDao.insertCourse(course)
+    override suspend fun getById(id : Int): Course {
+        return courseDao.getById(id)
     }
 
-    override suspend fun updateCourse(id: Long, title: String, content: String) {
-        courseDao.updateCourse(id, title, content)
+    override suspend fun getByType(type : Int): List<Course> {
+        return courseDao.getByType(type)
     }
 
-    override suspend fun deleteCourse(courseId: Long) {
-        courseDao.deleteCourse(courseId)
+    override suspend fun getFavourite(): List<Course> {
+        return courseDao.getFavourite()
+    }
+
+    override suspend fun insert(course: Course) {
+        courseDao.insert(course)
+    }
+
+    override suspend fun update(
+        id: Int,
+        title: String,
+        description: String,
+        metaKeywords: String,
+        avatar: String,
+        type: Int
+    ) {
+        courseDao.update(id, title, description, metaKeywords, avatar, type)
+    }
+
+    override suspend fun updateFavourite(id: Int, favourite: Int) {
+        courseDao.updateFavourite(id, favourite)
+    }
+
+    override suspend fun delete(courseId: Int) {
+        courseDao.detete(courseId)
     }
 }

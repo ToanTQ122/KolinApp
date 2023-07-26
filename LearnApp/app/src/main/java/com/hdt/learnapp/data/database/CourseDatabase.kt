@@ -7,7 +7,7 @@ import com.hdt.learnapp.data.entities.Course
 @Database(entities = [Course::class], version = 1, exportSchema = false)
 abstract class CourseDatabase : RoomDatabase() {
     companion object {
-        const val DATABASE_NAME = "course-database"
+        const val DATABASE_NAME = "learn-database"
     }
 
     abstract fun appDao(): CourseDao

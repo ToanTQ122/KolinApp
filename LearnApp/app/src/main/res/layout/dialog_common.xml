@@ -37,12 +37,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btNegative"
-            style="@style/MaterialButtonIconStyle"
             android:layout_width="@dimen/dp_112"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_30"
             android:layout_marginBottom="@dimen/dp_38"
-            android:fontFamily="@font/nunito_regular"
             android:textSize="@dimen/sp_18"
             app:backgroundTint="@color/colorRed"
             app:cornerRadius="@dimen/dp_5"
@@ -55,12 +53,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btPositive"
-            style="@style/MaterialButtonIconStyle"
             android:layout_width="@dimen/dp_112"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_30"
             android:layout_marginBottom="@dimen/dp_38"
-            android:fontFamily="@font/nunito_regular"
             android:textSize="@dimen/sp_18"
             app:backgroundTint="@color/colorGreenJungle"
             app:cornerRadius="@dimen/dp_5"

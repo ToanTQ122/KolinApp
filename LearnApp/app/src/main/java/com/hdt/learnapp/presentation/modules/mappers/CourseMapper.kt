@@ -8,10 +8,13 @@ class CourseMapper : BaseMapper<Course, CourseModel>() {
     override fun transform(entity: Course): CourseModel {
         return CourseModel(
             id = entity.id,
-            time = entity.time,
             title = entity.title,
-            content = entity.content,
-            colorHex = entity.colorHex
+            description = entity.description,
+            metaKeywords = entity.metaKeywords,
+            avatar = entity.avatar,
+            type = entity.type,
+            time = entity.time,
+            favourite = entity.favourite
         )
     }
 }

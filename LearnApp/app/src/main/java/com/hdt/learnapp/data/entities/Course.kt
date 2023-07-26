@@ -6,9 +6,12 @@ import androidx.room.PrimaryKey
 @Entity
 data class Course(
     @PrimaryKey(autoGenerate = true)
-    val id: Long = 0,
-    val time: Long,
+    val id: Int = 0,
     val title: String,
-    val content: String,
-    val colorHex: String
+    val description: String,
+    val metaKeywords: String,
+    val avatar: String,
+    val type: Int,
+    val time: Long,
+    val favourite : Int = 0
 )

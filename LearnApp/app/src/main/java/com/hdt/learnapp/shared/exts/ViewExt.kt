@@ -1,11 +1,12 @@
 package com.hdt.learnapp.shared.exts
 
+import android.annotation.SuppressLint
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.annotation.IdRes
 import androidx.core.content.ContextCompat
-import com.vanthien113.tiannote.shared.utilities.ColorUtils
 import com.google.android.material.button.MaterialButton
+import com.hdt.learnapp.shared.utilities.ColorUtils
 
 fun View.setOnDelayClickListener(method: () -> Unit) {
     this.setOnClickListener {
@@ -30,7 +31,7 @@ fun View.gone() {
 }
 
 fun MaterialButton.changeBackgroundColor(@IdRes colorRes: Int) {
-    backgroundTintList = ContextCompat.getColorStateList(context, colorRes)
+    //backgroundTintList = ContextCompat.getColorStateList(context, colorRes)
 }
 
 fun MaterialButton.changeBackgroundColor(colorHex: String) {

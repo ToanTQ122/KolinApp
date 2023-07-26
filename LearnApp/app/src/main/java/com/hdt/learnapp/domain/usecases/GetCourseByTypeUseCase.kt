@@ -1,13 +1,13 @@
-package com.hdt.learnapp.domain.usecases.course
+package com.hdt.learnapp.domain.usecases
 
 import com.hdt.learnapp.data.entities.Course
 import com.hdt.learnapp.data.repositories.localrepositories.CourseRepository
 import javax.inject.Inject
 
-class GetCourseUseCase  @Inject constructor(
+class GetCourseByTypeUseCase  @Inject constructor(
     private val courseRepository: CourseRepository
 ){
-    suspend fun invoke() : List<Course> {
-        return courseRepository.getCourses()
+    suspend fun invoke(type : Int) : List<Course> {
+        return courseRepository.getByType(type)
     }
 }

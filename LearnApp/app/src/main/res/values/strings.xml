@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Learn App</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="title_setting">Setting</string>
+
+    <string name="learn_now">Learn Now</string>
+    <string name="popular">Popular</string>
 
     <string name="welcome">Welcome</string>
     <string name="notes">Notes</string>

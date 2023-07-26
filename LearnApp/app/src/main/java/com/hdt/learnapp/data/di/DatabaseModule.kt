@@ -2,7 +2,7 @@ package com.hdt.learnapp.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.hdt.learnapp.CourseDao
+import com.hdt.learnapp.data.database.daos.CourseDao
 import com.hdt.learnapp.data.database.daos.CourseDatabase
 import dagger.Module
 import dagger.Provides
