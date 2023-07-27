@@ -16,7 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val getCoursesUseCase: GetCourseUseCase,
-    private val CourseMapper: CourseMapper
+    //private val courseMapper: CourseMapper
 ) : BaseViewModel() {
     val getCourseObs = SingleLiveEvent<ProcessState<List<CourseModel>>>()
 
@@ -26,7 +26,7 @@ class HomeViewModel @Inject constructor(
                 getCoursesUseCase.invoke()
             }
                 .onSuccess {
-                    getCourseObs.postValue(ProcessState.success(CourseMapper.transformList(it)))
+                    //getCourseObs.postValue(ProcessState.success(courseMapper.transformList(it)))
                 }
                 .onFailure {
                     getCourseObs.postValue(ProcessState.error(it))

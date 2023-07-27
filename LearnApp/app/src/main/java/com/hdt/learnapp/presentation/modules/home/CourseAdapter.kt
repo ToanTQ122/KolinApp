@@ -6,7 +6,7 @@ import com.hdt.learnapp.databinding.ItemCourseBinding
 import com.hdt.learnapp.presentation.base.BaseAdapter
 import com.hdt.learnapp.presentation.model.CourseModel
 
-class HomeAdapter(
+class CourseAdapter(
     private val onCourseClicked: (CourseModel) -> Unit
 
 ) : BaseAdapter<ItemCourseBinding, CourseModel>() {

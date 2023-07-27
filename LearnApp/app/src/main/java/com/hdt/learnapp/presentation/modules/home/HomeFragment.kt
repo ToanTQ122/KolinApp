@@ -7,8 +7,8 @@ import com.hdt.learnapp.databinding.FragmentHomeBinding
 import com.hdt.learnapp.presentation.base.BaseMVVMFragment
 import com.hdt.learnapp.presentation.model.CourseModel
 import com.hdt.learnapp.presentation.modules.splash.SplashFragmentDirections
-import com.hdt.learnapp.shared.widget.CommonDialog
 import dagger.hilt.android.AndroidEntryPoint
+import com.hdt.learnapp.shared.exts.getDrawable
 
 @AndroidEntryPoint
 class HomeFragment : BaseMVVMFragment<FragmentHomeBinding, HomeViewModel>() {
@@ -16,21 +16,6 @@ class HomeFragment : BaseMVVMFragment<FragmentHomeBinding, HomeViewModel>() {
         fun navigateFromSplashScreen(navController: NavController) {
             navController.navigate(SplashFragmentDirections.actionSplashFragmentToHomeFragment())
         }
-    }
-
-    private val CourseAdapter by lazy {
-        CourseAdapter(
-            onCourseClicked = ::onCourseClicked
-        )
-    }
-
-    private val infoDialog by lazy {
-        CommonDialog(
-            context = requireContext(),
-            title = getString(R.string.msg_info),
-            positiveText = getString(R.string.thanks),
-            positiveBackgroundColor = R.color.colorGreenJungle,
-        )
     }
 
     override fun getViewModelClass(): Class<HomeViewModel> {
@@ -45,14 +30,17 @@ class HomeFragment : BaseMVVMFragment<FragmentHomeBinding, HomeViewModel>() {
         initViews()
     }
 
-    override fun onResume() {
-        super.onResume()
-        getViewModel().getCourses()
+    private val courseAdapter by lazy {
+        CourseAdapter(
+            onCourseClicked = ::onCourseClicked
+        )
     }
-
+    private fun onCourseClicked(courseModel: CourseModel) {
+        //EditNoteFragment.navigateFromHomeScreen(findNavController(), noteModel)
+    }
     private fun initViews() {
-        getViewBinding().rvCourses.apply {
-            adapter = CourseAdapter
+        getViewBinding().listPopular.apply {
+            adapter = courseAdapter
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL).apply {
                 R.drawable.divider_item_decoration.getDrawable(requireContext())?.let {
                     setDrawable(it)
@@ -61,9 +49,17 @@ class HomeFragment : BaseMVVMFragment<FragmentHomeBinding, HomeViewModel>() {
         }
     }
 
+    override fun registerViewEvent() {
 
-
-    private fun onCourseClicked(CourseModel: CourseModel) {
-        //EditCourseFragment.navigateFromHomeScreen(findNavController(), CourseModel)
     }
+
+    override fun registerViewModelObs() {
+
+    }
+    override fun onResume() {
+        super.onResume()
+        getViewModel().getCourses()
+    }
+
+
 }

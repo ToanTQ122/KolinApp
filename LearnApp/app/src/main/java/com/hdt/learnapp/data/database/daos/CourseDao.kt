@@ -22,7 +22,7 @@ interface CourseDao {
     @Insert
     suspend fun insert(course: Course)
 
-    @Query("UPDATE Course SET title = :title, description = :content, metaKeywords = :metaKeywords, avatar = :avatar, type = :type,WHERE id =:id")
+    @Query("UPDATE Course SET title = :title, description = :description, metaKeywords = :metaKeywords, avatar = :avatar, type = :type WHERE id =:id")
     suspend fun update(id: Int, title: String, description: String, metaKeywords: String, avatar: String, type : Int)
 
     @Query("UPDATE Course SET favourite = :favourite WHERE id =:id")
